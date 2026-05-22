@@ -1,0 +1,16 @@
+[package]
+name = "paul-zy-wang/ziteng-birthday"
+version = "0.1.0"
+description = "Ziteng's 20th Birthday dynamic commemorative application ready for Wasmer Edge deployment"
+license = "MIT"
+
+[[module]]
+name = "static-web-server"
+source = "wasmer/static-web-server"
+
+[[command]]
+name = "web"
+module = "static-web-server"
+
+[fs]
+public = "dist"

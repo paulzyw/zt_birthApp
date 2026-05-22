@@ -1,0 +1,6 @@
+{
+  "name": "Ziteng's 20th Birthday Experience",
+  "description": "A premium, cinematic interactive storytelling journey celebrating Ziteng's 20th birthday and transition into adulthood.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
