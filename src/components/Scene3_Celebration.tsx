@@ -72,7 +72,7 @@ export function Scene3_Celebration({ onComplete }: { onComplete: () => void; key
       className="absolute inset-0 flex flex-col lg:grid lg:grid-cols-12 px-4 sm:px-8 lg:px-12 gap-8 items-center overflow-y-auto py-24 lg:py-0"
     >
       {/* Big Display Number Overlay */}
-      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] sm:text-[20rem] lg:text-[30rem] font-bold text-white/[0.02] select-none z-0 tracking-tighter pointer-events-none">
+      <div className="fixed top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] sm:text-[20rem] lg:text-[30rem] font-bold text-[#ffea00]/[1.0] select-none z-0 tracking-tighter pointer-events-none">
         20
       </div>
 
@@ -97,7 +97,7 @@ export function Scene3_Celebration({ onComplete }: { onComplete: () => void; key
       {/* Center: The Architectural 3D Cake Focal Point */}
       <div className="w-full lg:col-span-6 flex flex-col items-center justify-center relative z-10 lg:order-2 py-8 lg:py-0">
         <div className="relative z-10 w-full flex flex-col items-center group">
-          <div className="scale-75 sm:scale-90 lg:scale-100 transition-transform duration-700 group-hover:scale-105">
+          <div className="scale-100 sm:scale-125 lg:scale-145 transition-transform duration-700 group-hover:scale-135">
             <BirthdayCake blown={isBlown} />
           </div>
 
