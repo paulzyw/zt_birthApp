@@ -1,3 +1,4 @@
 kind: wasmer.io/App.v0
-name: ziteng-birthday
+name: zteng
 package: .
+owner: paulzy02
