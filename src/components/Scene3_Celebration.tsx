@@ -72,7 +72,7 @@ export function Scene3_Celebration({ onComplete }: { onComplete: () => void; key
       className="absolute inset-0 flex flex-col lg:grid lg:grid-cols-12 px-4 sm:px-8 lg:px-12 gap-8 items-center overflow-y-auto py-24 lg:py-0"
     >
       {/* Big Display Number Overlay */}
-      <div className="fixed top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] sm:text-[20rem] lg:text-[30rem] font-bold text-[#ffea00]/[1.0] select-none z-0 tracking-tighter pointer-events-none">
+      <div className="fixed top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-[12rem] sm:text-[20rem] lg:text-[30rem] font-bold text-[#ffea00]/[1.0] select-none z-0 tracking-tighter pointer-events-none">
         20
       </div>
 
