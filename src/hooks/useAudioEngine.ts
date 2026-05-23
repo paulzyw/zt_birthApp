@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { Howl, Howler } from 'howler';
 
 const AMBIENT_URL = 'https://abxwkechmdchstqrfofq.supabase.co/storage/v1/object/public/audio_file/nastelbom-victory.mp3';
-const MESSAGE_URL = 'https://abxwkechmdchstqrfofq.supabase.co/storage/v1/object/public/audio_file/parents-message-ped.wav';
+const MESSAGE_URL = 'https://abxwkechmdchstqrfofq.supabase.co/storage/v1/object/public/audio_file/parents-message02-ped.wav';
 const FIREWORKS_URL = 'https://abxwkechmdchstqrfofq.supabase.co/storage/v1/object/public/audio_file/community-fireworks.mp3';
 const BIRTHDAY_URL = 'https://abxwkechmdchstqrfofq.supabase.co/storage/v1/object/public/audio_file/happy-birthday-to-you-piano-version.mp3';
 
