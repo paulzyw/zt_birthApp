@@ -13,4 +13,4 @@ name = "web"
 module = "wasmer/static-web-server:static-web-server"
 
 [fs]
-public = "dist"
+"/public" = "dist"
