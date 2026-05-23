@@ -1,6 +1,6 @@
 [package]
 name = "paulzyw02/zt-birthday-app"
-version = "0.1.1"
+version = "0.1.2"
 description = "Ziteng's 20th Birthday dynamic commemorative application ready for Wasmer Edge deployment"
 license = "MIT"
 
@@ -11,6 +11,10 @@ license = "MIT"
 [[command]]
 name = "web"
 module = "wasmer/static-web-server:static-web-server"
+runner = "wasi"
+
+[command.annotations.wasi]
+args = ["-d", "/public", "--fallback-page", "/public/index.html"]
 
 [fs]
 "/public" = "dist"
