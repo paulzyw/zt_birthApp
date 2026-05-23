@@ -1,5 +1,5 @@
 [package]
-name = "paulzyw02/zteng"
+name = "paulzyw02/zt-birthday-app"
 version = "0.1.0"
 description = "Ziteng's 20th Birthday dynamic commemorative application ready for Wasmer Edge deployment"
 license = "MIT"
