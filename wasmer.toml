@@ -1,6 +1,6 @@
 [package]
 name = "paulzyw02/zt-birthday-app"
-version = "0.1.2"
+version = "0.1.3"
 description = "Ziteng's 20th Birthday dynamic commemorative application ready for Wasmer Edge deployment"
 license = "MIT"
 
@@ -8,13 +8,20 @@ license = "MIT"
 [dependencies]
 "wasmer/static-web-server" = "^1"
 
+[fs]
+public = "dist"
+
 [[command]]
-name = "web"
-module = "wasmer/static-web-server:static-web-server"
-runner = "wasi"
+name = "script"
+module = "wasmer/static-web-server:webserver"
+runner = "https://webc.org/runner/wasi"
 
 [command.annotations.wasi]
-args = ["-d", "/public", "--fallback-page", "/public/index.html"]
-
-[fs]
-"/public" = "dist"
+# This tells Wasmer to serve the 'dist' folder and fallback to index.html for React Router
+env = [
+  "SERVER_PORT=8080", 
+  "SERVER_ROOT=/public", 
+  "SERVER_PAGE_FALLBACK=/public/index.html",
+  "SERVER_FALLBACK_PAGE_DOCUMENT=/public/index.html",
+  "SERVER_ERROR_PAGE_404=/public/index.html"
+]
