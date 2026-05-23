@@ -14,10 +14,10 @@ import { useAudioEngine } from '../hooks/useAudioEngine';
 
 export function SceneController() {
   const [currentScene, setCurrentScene] = useState<Scene>(Scene.OPENING);
-  const { isMuted, toggleMute, playAmbient } = useAudioEngine();
+  const { isMuted, toggleMute, unlockAudio } = useAudioEngine();
 
   const handleStart = () => {
-    playAmbient();
+    unlockAudio();
     setCurrentScene(Scene.COUNTDOWN);
   };
 
