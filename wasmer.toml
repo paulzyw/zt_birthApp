@@ -1,6 +1,6 @@
 [package]
 name = "paulzyw02/zt-birthday-app"
-version = "0.1.3"
+version = "0.1.4"
 description = "Ziteng's 20th Birthday dynamic commemorative application ready for Wasmer Edge deployment"
 license = "MIT"
 
