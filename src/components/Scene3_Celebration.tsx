@@ -109,7 +109,7 @@ export function Scene3_Celebration({ onComplete }: { onComplete: () => void; key
             >
               {isBlown ? "Wish Captured" : "The Wish"}
             </motion.h2>
-            <p className="text-[9px] sm:text-xs text-white/40 tracking-[0.1em] mb-6 sm:mb-8 uppercase">
+            <p className="text-[12px] sm:text-xs text-white/40 tracking-[0.1em] mb-6 sm:mb-8 uppercase">
               {isBlown ? "Transformation Initiated" : (isSupported ? "Blow gently into your microphone" : "Make a wish and touch the spark")}
             </p>
             
